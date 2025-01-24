@@ -1,0 +1,22 @@
+header {
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex; /* Используем flexbox для расположения элементов */
+    justify-content: space-between; /* Распределяем элементы по краям */
+    align-items: center; /* Выравниваем элементы по вертикали */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#main_page_link {
+    font-size: 20px;
+}
