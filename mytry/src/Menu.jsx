@@ -1,8 +1,10 @@
-import React from 'react'
-import {useNavigate} from 'react-router-dom';
+import React, {useEffect} from 'react'
+import {useLocation, useNavigate} from 'react-router-dom';
 
 function Menu() {
     const navigate = useNavigate();
+
+
 
     if (localStorage.getItem('user_token') != null) {
         return (<div><p>nado pomenyat</p></div>

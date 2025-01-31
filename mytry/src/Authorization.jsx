@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {useNavigate} from "react-router-dom";
 import {useState} from "react";
+import AuthContext from "./AuthContext.js";
 
 function Authorization() {
     const navigate = useNavigate();
+    const { updateUserToken } = useContext(AuthContext);
     const [formData, setFormData] = useState({
         email: '',
         password: '',
@@ -37,7 +39,9 @@ function Authorization() {
                 //var token = response.text()
                 var token = await response.text()
                 console.log("Token: " + token)
+
                 localStorage.setItem("user_token", token)
+                updateUserToken(token)
                 navigate('/')
             } else {
                 const errorData = await response.text()
