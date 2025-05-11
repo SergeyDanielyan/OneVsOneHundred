@@ -1,8 +1,9 @@
-import { createContext } from 'react';
+import {createContext} from 'react';
 
 const AuthContext = createContext({
     userToken: null,
-    updateUserToken: (token) => {}, // Пустая функция для обновления токена (будет переопределена в Provider)
+    updateUserToken: (token) => {
+    },
 });
 
 export default AuthContext;

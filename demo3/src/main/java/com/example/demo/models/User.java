@@ -6,6 +6,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Data
 @Entity
 @Table(name = "users")
@@ -23,4 +26,7 @@ public class User {
     private String username;
     @Column(name = "password")
     private String password;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "game_room_id")
+    private GameRoom gameRoom;
 }

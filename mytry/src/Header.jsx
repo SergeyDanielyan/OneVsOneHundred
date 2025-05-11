@@ -3,7 +3,7 @@ import './Header.css'
 import AuthContext from "./AuthContext.js";
 
 function Header() {
-    const { userToken } = useContext(AuthContext);
+    const {userToken} = useContext(AuthContext);
 
     // const [userToken, setUserToken] = useState(localStorage.getItem('user_token'));
     //
@@ -47,7 +47,7 @@ function Header() {
     if (userToken != null) {
         const url = 'http://localhost:8085/api/user/name?token=' + userToken
         var username
-        fetch(url).then((response) => response.text()).then((text) => username = text)
+        fetch(url).then((response) => response.text()).then((text) => localStorage.setItem('username', text))
         console.log("Token " + userToken)
         return (
             <header>
@@ -58,7 +58,7 @@ function Header() {
                 </nav>
                 <nav>
                     <ul>
-                        <li>{username}</li>
+                        <li><a href="/">{localStorage.getItem("username")}</a></li>
                         <li><a href="/logout">Выйти</a></li>
                     </ul>
                 </nav>

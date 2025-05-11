@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import AuthContext from './AuthContext';
 
 function AuthProvider({ children }) {
-    const [userToken, setUserToken] = useState(() => localStorage.getItem('user_token')); // Инициализация из localStorage
+    const [userToken, setUserToken] = useState(() => localStorage.getItem('user_token'));
 
     useEffect(() => {
         const handleStorageChange = (event) => {
             if (event.key === 'user_token') {
-                setUserToken(event.newValue); // Обновление состояния при изменении в localStorage (из другой вкладки)
+                setUserToken(event.newValue);
             }
         };
 
@@ -24,7 +24,7 @@ function AuthProvider({ children }) {
         } else {
             localStorage.removeItem('user_token');
         }
-        setUserToken(newToken); // Обновление локального состояния и Context
+        setUserToken(newToken);
     };
 
     const authContextValue = {

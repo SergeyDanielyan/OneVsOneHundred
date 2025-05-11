@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.example.demo.controllers.rest;
 
 import com.example.demo.DTO.AuthDto;
 import com.example.demo.DTO.UserDto;
@@ -27,7 +27,7 @@ public class UserController {
             if (!userService.createUser(userDto)) {
                 throw new Exception("Couldn't create such user");
             }
-            return ResponseEntity.ok("User is registrated");
+            return ResponseEntity.ok("User is registered");
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         }

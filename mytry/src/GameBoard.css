@@ -1,0 +1,440 @@
+/*body {*/
+/*    background-image: url("./public/od15_snvo.jpg");*/
+/*}*/
+
+.player1 {
+    position: absolute;
+    top: 120px;
+    left: 128px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 1px; !* Убираем скругленные углы*!*!*/
+    /*rx: 10px;*/
+    /*ry:10px;*/
+    /*!*cursor: pointer;*!*/
+}
+
+.player2 {
+    position: absolute;
+    top: 120px;
+    left: 260px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player3 {
+    position: absolute;
+    top: 120px;
+    left: 392px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player4 {
+    position: absolute;
+    top: 120px;
+    left: 525px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player5 {
+    position: absolute;
+    top: 120px;
+    left: 657px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player6 {
+    position: absolute;
+    top: 120px;
+    left: 789px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player7 {
+    position: absolute;
+    top: 120px;
+    left: 921px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player8 {
+    position: absolute;
+    top: 120px;
+    left: 1054px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player9 {
+    position: absolute;
+    top: 120px;
+    left: 1185px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player10 {
+    position: absolute;
+    top: 120px;
+    left: 1318px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player11 {
+    position: absolute;
+    top: 200px;
+    left: 260px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player12 {
+    position: absolute;
+    top: 200px;
+    left: 392px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player13 {
+    position: absolute;
+    top: 200px;
+    left: 525px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player14 {
+    position: absolute;
+    top: 200px;
+    left: 657px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player15 {
+    position: absolute;
+    top: 200px;
+    left: 789px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player16 {
+    position: absolute;
+    top: 200px;
+    left: 921px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player17 {
+    position: absolute;
+    top: 200px;
+    left: 1054px;
+    width: 90px;
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player18 {
+    position: absolute;
+    top: 200px;
+    left: 1185px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player19 {
+    position: absolute;
+    top: 280px;
+    left: 326px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player20 {
+    position: absolute;
+    top: 280px;
+    left: 459px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player21 {
+    position: absolute;
+    top: 280px;
+    left: 591px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player22 {
+    position: absolute;
+    top: 280px;
+    left: 723px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player23 {
+    position: absolute;
+    top: 280px;
+    left: 855px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player24 {
+    position: absolute;
+    top: 280px;
+    left: 987px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.player25 {
+    position: absolute;
+    top: 280px;
+    left: 1120px;
+    /*width: 90px;*/
+    /*height: 60px;*/
+    /*background-color: red;*/
+    /*!*color: red;*!*/
+    /*border: none;*/
+    /*!*borderRadius: 0; !* Убираем скругленные углы*!*!*/
+    /*cursor: pointer;*/
+}
+
+.question-field {
+    /*background-image: url("./public/od15_snvo.jpg");*/
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    width: 750px;
+    height: 150px;
+    top: 380px;
+    left: 378px;
+
+    /*background-color: #e0f7fa;*/
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.2em;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;
+}
+
+.answer-container {
+    position: absolute;
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 10px; /* Расстояние между кнопками */
+    top: 580px;
+    left: 388px;
+    align-self: center;
+}
+
+.win-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    top: 580px;
+    left: 468px;
+    align-self: center;
+}
+
+.lost-game {
+    position: absolute;
+    padding: 10px 20px;
+    width: 250px;
+    top: 580px;
+    left: 643px;
+    background-color: #00F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lost-game:hover {
+    color: #000;
+    background-color: #FF0;
+}
+
+.answer {
+    padding: 10px 20px;
+    width: 250px;
+    background-color: #00F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+.answer:hover {
+    color: #000;
+    background-color: #FF0; /* Темнее при наведении */
+}
+
+.correct-answer {
+    padding: 10px 20px;
+    width: 250px;
+    background-color: #0F0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: default;
+    pointer-events: none;
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+.wrong-answer {
+    padding: 10px 20px;
+    width: 250px;
+    background-color: #F00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: default;
+    pointer-events: none;
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+
+/*.answer-field {*/
+/*    top: 530px;*/
+/*    padding: 15px 20px;*/
+/*    cursor: pointer;*/
+/*    background-color: #213547;*/
+/*    border-bottom: 1px solid #e0e0e0;*/
+/*    transition: background-color 0.3s ease; !* Плавный переход цвета *!*/
+/*}*/

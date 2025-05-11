@@ -6,24 +6,23 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-
 @Data
 @Entity
-@Table(name = "sessions")
+@Table(name = "tasks")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Session {
+public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
-    @Column(name = "token")
-    private String token;
-    @Column(name = "expired")
-    private LocalDateTime expired;
+    @Column(name = "question")
+    private String question;
+    @Column(name = "correct_answer")
+    private String correctAnswer;
+    @Column(name = "first_wrong_answer")
+    private String firstWrongAnswer;
+    @Column(name = "second_wrong_answer")
+    private String secondWrongAnswer;
 }

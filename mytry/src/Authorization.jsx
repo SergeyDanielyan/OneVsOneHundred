@@ -5,7 +5,7 @@ import AuthContext from "./AuthContext.js";
 
 function Authorization() {
     const navigate = useNavigate();
-    const { updateUserToken } = useContext(AuthContext);
+    const {updateUserToken} = useContext(AuthContext);
     const [formData, setFormData] = useState({
         email: '',
         password: '',
@@ -16,14 +16,11 @@ function Authorization() {
     }
 
     const handleSubmit = async (e) => {
-        e.preventDefault(); // Предотвращаем перезагрузку страницы
-        console.log('Данные формы:', formData); // Заменяйте на отправку на сервер
+        e.preventDefault();
+        console.log('Данные формы:', formData);
 
         try {
             const url = 'http://localhost:8085/api/user/auth'
-            // var email = formData.email
-            // var username = formData.username
-            // var password = formData.password
             var query_body = JSON.stringify(formData)
             console.log("query_body", formData)
             const response = await fetch(url, {
@@ -41,6 +38,7 @@ function Authorization() {
                 console.log("Token: " + token)
 
                 localStorage.setItem("user_token", token)
+                localStorage.setItem("user_email", formData.email)
                 updateUserToken(token)
                 navigate('/')
             } else {

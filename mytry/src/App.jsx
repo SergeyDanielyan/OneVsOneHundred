@@ -1,56 +1,40 @@
-import {useEffect, useRef, useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import './App.css'
 import Menu from "./Menu.jsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-// import Header from "./Header.jsx";
 import Registration from "./Registration.jsx";
 import Authorization from "./Authorization.jsx";
 import Logout from "./Logout.jsx";
 import {connectClient} from "./Websocket.js";
-// import StompChat from "./StompChat.jsx";
-// import StompExample from "./StompExample.jsx";
-//import useWebSocket from "react-use-websocket";
-// import io from 'socket.io-client';
-// import {connectClient} from "./Websocket.js";
-// import Test from "./Test.jsx";
+import OnePlayer from "./OnePlayer.jsx";
+import RoomConnect from "./RoomConnect.jsx";
+import TwoPlayers from "./TwoPlayers.jsx";
 
 function App() {
-    // const socket = io('http://localhost:8085');
-    const websocketRef = useRef(null);
-    const [isConnected, setIsConnected] = useState(false);
-    const [websocketError, setWebsocketError] = useState(null);
-
-    useEffect(() => {
-        // websocketRef.socket = io('http://localhost:8086');
-        // return () => websocketRef.socket.disconnect()
-        websocketRef.client = connectClient(setIsConnected, setWebsocketError)
-        return () => websocketRef.client.disconnect()
-    })
-
-
-    // const [messageToSend, setMessageToSend] = useState('');
-    // const [incomingMessage, setIncomingMessage] = useState('');
-    // const { sendMessage, lastMessage, readyState } = useWebSocket('http://localhost:8086/ws', { // Изменение URL
-    //     onOpen: () => console.log('WebSocket connection opened'),
-    //     onClose: () => console.log('WebSocket connection closed'),
-    //     onError: (error) => console.error('WebSocket error:', error),
-    // });
+    // const websocketRef = useRef(null);
+    // const [isConnected, setIsConnected] = useState(false);
+    // const [websocketError, setWebsocketError] = useState(null);
+    //
+    // useEffect(() => {
+    //     websocketRef.client = connectClient(setIsConnected, setWebsocketError)
+    //     return () => websocketRef.client.disconnect()
+    // })
 
     return (
         <>
-            {/*<Header/>*/}
-            {/*<StompExample />*/}
-            {/*<StompChat />*/}
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Menu/>}/> {/* Menu отображается по умолчанию */}
+                    <Route path="/" element={<Menu/>}/>
                     <Route path="/registration" element={<Registration/>}/>
                     <Route path="/authorization" element={<Authorization/>}/>
                     <Route path="/logout" element={<Logout/>}/>
-                    {/*<Route path="/test" element={<Test/>}/>*/}
+                    <Route path="/one-player" element={<OnePlayer/>}/>
+                    <Route path="/room-connect" element={<RoomConnect/>}/>
+
+                    <Route path="/two-players" element={<TwoPlayers/>}/>
                 </Routes>
             </BrowserRouter>
         </>
